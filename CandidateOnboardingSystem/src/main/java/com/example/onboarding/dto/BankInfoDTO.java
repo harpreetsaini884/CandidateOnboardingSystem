@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class JobOfferNotification {
-    private Long candidateId;
-    private String name;
-    private String email;
+public class BankInfoDTO {
+    private String bankName;
+    private String accountNumber;
+    private String ifscCode;
 }

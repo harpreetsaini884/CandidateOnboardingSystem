@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class JobOfferNotification {
-    private Long candidateId;
-    private String name;
-    private String email;
+public class EducationInfoDTO {
+    private String degree;
+    private String institution;  // Could be renamed to 'university'
+    private int yearOfPassing;  // Could be renamed to 'graduationYear'
 }
