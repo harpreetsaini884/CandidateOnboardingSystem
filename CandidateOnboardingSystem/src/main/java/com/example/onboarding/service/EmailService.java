@@ -51,4 +51,12 @@ public class EmailService {
                "<br/><p>Best regards,<br/>HR Team</p>" +
                "</body></html>";
     }
+    public void sendOtpEmail(String to, String otp) throws MessagingException {
+        MimeMessage message = mailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+        helper.setTo(to);
+        helper.setSubject("Password Reset OTP");
+        helper.setText("Your OTP for password reset is: " + otp);
+        mailSender.send(message);
+    }
 }
