@@ -21,6 +21,8 @@ public class CandidateDTO {
     private String lastName;
     private String email;
     private String phoneNumber;
+    @Enumerated(EnumType.STRING)
     private Status status;
+    @Enumerated(EnumType.STRING)
     private OnboardStatus onboardStatus;
 }
